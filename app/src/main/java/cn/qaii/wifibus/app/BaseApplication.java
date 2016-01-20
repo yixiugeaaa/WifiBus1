@@ -26,6 +26,7 @@ public class BaseApplication extends Application {
 	public String city;
 	public double longitude;
 	public double latitude;
+	public String address;
 	
 	@Override
 	public void onCreate() {
