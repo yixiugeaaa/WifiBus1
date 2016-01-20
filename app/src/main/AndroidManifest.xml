@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cn.qaii.wifibus" >
+
+    <application
+        android:name=".app.BaseApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Black.NoTitleBar" >
+        <activity
+            android:name="cn.qaii.wifibus.common.activity.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="cn.qaii.wifibus.common.activity.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="cn.qaii.wifibus.localres.activity.LocalResActivity"
+            android:label="@string/title_activity_local_res" >
+        </activity>
+        <activity
+            android:name="cn.qaii.wifibus.common.activity.NavigationActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cn.qaii.wifibus.busquery.activity.BusQueryActivity"
+            android:label="@string/title_activity_bus_query" >
+        </activity>
+        <activity
+            android:name="cn.qaii.wifibus.common.activity.AboutActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+        <activity
+            android:name="cn.qaii.wifibus.busquery.activity.StationsActivity"
+            android:label="@string/title_activity_about" >
+        </activity>
+
+    </application>
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 要求获取设备当前网络状态 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 要求连接网络 -->
+
+</manifest>

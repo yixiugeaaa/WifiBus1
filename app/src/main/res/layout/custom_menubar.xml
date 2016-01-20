@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            style="@style/CustomMenu"
+            android:layout_alignParentTop="true"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/menubar_height"
+                android:background="@drawable/custom_menubar_button_background"
+                android:paddingLeft="3.0dip" >
+
+                <ImageView
+                    android:id="@+id/menubar_back_button"
+                    android:layout_width="10.0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:src="@drawable/backarrow_header_narrow" />
+
+                <ImageView
+                    android:id="@+id/vidyo_icon"
+                    android:layout_width="@dimen/menubar_icon_size"
+                    android:layout_height="@dimen/menubar_icon_size"
+                    android:layout_gravity="center"
+                    android:paddingRight="5.0dip"
+                    android:src="@drawable/ic_launcher" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="0.8"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="left|center" >
+
+                    <TextView
+                        android:id="@+id/title_text"
+                        style="@style/CustomMenuText"
+                        android:layout_width="0.0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="0.9"
+                        android:ellipsize="marquee"
+                        android:gravity="left|center"
+                        android:marqueeRepeatLimit="1"
+                        android:scrollHorizontally="true"
+                        android:singleLine="true"
+                        android:text="@string/app_name"
+                        android:textStyle="normal" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menubar_emailinvite_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/menubar_height"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/menubar_emailinvite_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/menubar_height"
+                    android:background="@drawable/custom_menubar_button_background"
+                    android:focusable="true"
+                    android:gravity="center"
+                    android:minWidth="@dimen/menubar_button_layout_width"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        style="@style/CustomMenuButtonIcon"
+                        android:src="@drawable/ic_menubar_email"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="1.0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="7.0dip"
+                    android:layout_marginTop="7.0dip"
+                    android:background="@color/menubar_seperator"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menubar_options_button"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/menubar_height"
+                android:background="@drawable/custom_menubar_button_background"
+                android:focusable="true"
+                android:gravity="center"
+                android:minWidth="@dimen/menubar_button_layout_width" >
+
+                <ImageView
+                    style="@style/CustomMenuButtonIcon"
+                    android:src="@drawable/icon_options"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

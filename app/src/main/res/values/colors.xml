@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="griditems_bg">#ffe8ecef</color>
+    <color name="commo_text_color">#ff333333</color>
+    <color name="line">#ffd3dde6</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="menubar_seperator">#ffcbcbcb</color>
+    <color name="menubar_text">#ff464646</color>
+    <color name="menubar_list_separator">#ffd7d7d7</color>
+    <color name="menubar_list_text">#ff535353</color>
+    <color name="main_background">#ffeae9e9</color>
+    <color name="vidyo_button_text_shadow">#bfffffff</color>
+    <color name="menubar_list_background_pressed">#ffd7d7d7</color>
+    <color name="menubar_list_background_normal">#fff5f5f5</color>
+    <color name="vidyo_greenbutton_text_disabled">#7fffffff</color>
+    <color name="vidyo_greenbutton_text_normal">#ffffffff</color>
+    <color name="contacts_search_text">#ff666666</color>
+    <color name="search_hint">#ffafafaf</color>
+    <color name="contacts_text">#ff666666</color>
+    <color name="vidyo_list_gesture">#ff8cc64d</color>
+    <color name="vidyo_text_active">#ff666666</color>
+    <color name="vidyo_list_background_normal">#00000000</color>
+
+</resources>

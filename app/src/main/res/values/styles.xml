@@ -1,0 +1,113 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+
+        -->
+    </style>
+
+
+    <style name="FullscreenTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="buttonBarStyle">@style/ButtonBar</item>
+        <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
+    </style>
+
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+
+    <style name="CustomMenu">
+        <item name="android:background">@drawable/custom_menubar_background</item>
+        <item name="android:padding">3.0dip</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/menubar_height</item>
+    </style>
+
+    <style name="CustomMenuText">
+        <item name="android:textSize">@dimen/menubar_text_size</item>
+        <item name="android:textColor">@color/menubar_text</item>
+    </style>
+
+    <style name="CustomMenuButtonIcon">
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:padding">2.0dip</item>
+        <item name="android:layout_width">@dimen/menubar_button_icon_size</item>
+        <item name="android:layout_height">@dimen/menubar_button_icon_size</item>
+    </style>
+
+    <style name="CustomMenuBarOptionsButtonLayout">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/menubar_list_background</item>
+        <item name="android:focusable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/menubar_option_item_height</item>
+    </style>
+
+    <style name="CustomMenuBarOptionsButtonTextView">
+        <item name="android:textSize">@dimen/menubar_option_textsize</item>
+        <item name="android:textColor">@color/menubar_list_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:layout_marginRight">10.0dip</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="VidyoGreenButton" parent="@style/VidyoButton">
+        <item name="android:textColor">@color/vidyo_greenbutton_text</item>
+    </style>
+
+    <style name="VidyoButton">
+        <item name="android:textSize">@dimen/vidyo_button_textsize</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/vidyo_button_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/vidyo_button_height</item>
+        <item name="android:shadowColor">@color/vidyo_button_text_shadow</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+    </style>
+
+    <style name="MyRoomsContactsListStyle">
+        <item name="android:listSelector">@drawable/list_selector_transparent</item>
+        <item name="android:cacheColorHint">@android:color/transparent</item>
+        <item name="android:dividerHeight">0.0px</item>
+        <item name="android:footerDividersEnabled">true</item>
+        <item name="android:gestureColor">@color/vidyo_list_gesture</item>
+    </style>
+
+    <style name="ButtonBarButton" />
+
+</resources>

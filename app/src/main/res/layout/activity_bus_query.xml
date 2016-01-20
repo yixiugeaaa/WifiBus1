@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_background" >
+
+    <LinearLayout
+        android:id="@+id/menubar_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" >
+
+        <include
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            layout="@layout/custom_menubar" />
+    </LinearLayout>
+    
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+        android:layout_below="@+id/menubar_menu"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/contacts_search_bottompad"
+                android:layout_marginTop="@dimen/contacts_search_toppad" >
+
+                <EditText
+                    android:id="@+id/searchField"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/contacts_search_height"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/contacts_search_sidepad"
+                    android:layout_marginRight="@dimen/contacts_search_sidepad"
+                    android:background="@drawable/vidyo_default_inputfield"
+                    android:maxLength="40"
+                    android:paddingLeft="5.0dip"
+                    android:paddingRight="@dimen/contacts_search_height"
+                    android:scrollHorizontally="true"
+                    android:textColor="@color/contacts_search_text"
+                    android:textColorHint="@color/search_hint"
+                    android:digits="0123456789"
+                    android:textSize="@dimen/contacts_search_textsize"
+                    android:inputType="number" />
+
+                <ImageView
+                    android:id="@+id/searchMagnifyIcon"
+                    android:layout_width="@dimen/contacts_search_icon_size"
+                    android:layout_height="@dimen/contacts_search_icon_size"
+                    android:layout_alignRight="@id/searchField"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/contacts_search_icon_padsides"
+                    android:src="@drawable/icon_search" />
+
+                <LinearLayout
+                    android:id="@+id/searchClearIcon"
+                    android:layout_width="@dimen/contacts_search_height"
+                    android:layout_height="@dimen/contacts_search_height"
+                    android:layout_alignRight="@id/searchField"
+                    android:background="@drawable/vidyo_icon_selector"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:layout_width="@dimen/contacts_search_icon_size"
+                        android:layout_height="@dimen/contacts_search_icon_size"
+                        android:src="@drawable/icon_x" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/statusLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:focusable="false"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1.0dip"
+                    android:layout_marginLeft="@dimen/contacts_header_sidepad"
+                    android:layout_marginRight="@dimen/contacts_header_sidepad"
+                    android:background="@color/contacts_text" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/main_background"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/contacts_list_sidepad"
+                android:paddingRight="@dimen/contacts_list_sidepad" >
+                
+                <ListView
+                    android:id="@+id/myrooms_contacts_list"
+                    style="@style/MyRoomsContactsListStyle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null" />
+
+                <LinearLayout
+                    android:id="@+id/route_empty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/EmptyTag"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/search_noresultsfound"
+                        android:textColor="#ff808080"
+                        android:textSize="@dimen/search_notfound_textsize"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/myrooms_contacts_searching"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40.0dip"
+                    android:visibility="visible"
+                    android:orientation="vertical" >
+
+                    <ProgressBar
+                        android:id="@+id/ProgressBar01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:indeterminateDrawable="@drawable/vidyo_progress" 
+                        android:visibility="visible"/>
+                    
+                    <TextView
+                        android:id="@+id/isdowning"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/loading_routes"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menubar_options"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/menubar_menu"
+        android:visibility="visible" >
+
+        <include
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            layout="@layout/custom_menubar_options" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menubar_coverall"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true"
+        android:background="@android:color/transparent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical"
+         >
+
+        <ImageView
+            android:id="@+id/bus_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:paddingLeft="5.0dip"
+            android:paddingRight="5.0dip"
+            android:src="@drawable/bus_icon" />
+
+        <TextView
+            android:id="@+id/text_bus_routes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="@dimen/search_endoflist_textsize"
+            android:textStyle="bold"
+            android:text="1路" />
+
+        <TextView
+            android:id="@+id/text_bus_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15.0dip"
+            android:text="四方-湖北路"
+            android:textColor="@color/vidyo_text_active"
+            android:textSize="20dip" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1.0dip"
+        android:layout_marginLeft="@dimen/contacts_header_sidepad"
+        android:layout_marginRight="@dimen/contacts_header_sidepad"
+        android:background="@color/contacts_text" />
+
+</LinearLayout>

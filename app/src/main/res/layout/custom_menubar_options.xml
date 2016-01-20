@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menubar_options_background"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/popup_notopandright"
+        android:minWidth="@dimen/menubar_option_item_width"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/menubar_options_about"
+            style="@style/CustomMenuBarOptionsButtonLayout" >
+
+            <TextView
+                style="@style/CustomMenuBarOptionsButtonTextView"
+                android:text="@string/about_menu" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/menubar_list_separator" />
+
+        <LinearLayout
+            android:id="@+id/menubar_options_settings"
+            style="@style/CustomMenuBarOptionsButtonLayout" >
+
+            <TextView
+                style="@style/CustomMenuBarOptionsButtonTextView"
+                android:text="@string/settings_menu" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:background="@color/menubar_list_separator" />
+
+        <LinearLayout
+            android:id="@+id/menubar_options_logout"
+            style="@style/CustomMenuBarOptionsButtonLayout" >
+
+            <TextView
+                style="@style/CustomMenuBarOptionsButtonTextView"
+                android:text="@string/logout_menu" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

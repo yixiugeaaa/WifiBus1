@@ -1,0 +1,30 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">12dp</dimen>
+    <dimen name="activity_vertical_margin">10dp</dimen>
+
+
+    <dimen name="menubar_height">40.0dip</dimen>
+    <dimen name="menubar_icon_size">30.0dip</dimen>
+    <dimen name="menubar_secure_icon_width">12.0dip</dimen>
+    <dimen name="menubar_button_layout_width">40.0dip</dimen>
+    <dimen name="menubar_text_size">14.0dip</dimen>
+    <dimen name="menubar_button_icon_size">35.0dip</dimen>
+    <dimen name="menubar_option_item_width">200.0dip</dimen>
+    <dimen name="menubar_option_item_height">45.0dip</dimen>
+    <dimen name="menubar_option_textsize">16.0dip</dimen>
+    <dimen name="vidyo_button_height">55.0dip</dimen>
+    <dimen name="vidyo_button_textsize">24.0dip</dimen>
+    <dimen name="contacts_search_bottompad">5.0dip</dimen>
+    <dimen name="contacts_search_toppad">5.0dip</dimen>
+    <dimen name="contacts_search_height">50.0dip</dimen>
+    <dimen name="contacts_search_sidepad">15.0dip</dimen>
+    <dimen name="contacts_search_textsize">16.0dip</dimen>
+    <dimen name="contacts_search_icon_size">25.0dip</dimen>
+    <dimen name="contacts_search_icon_padsides">5.0dip</dimen>
+    <dimen name="contacts_header_sidepad">8.0dip</dimen>
+    <dimen name="contacts_list_sidepad">8.0dip</dimen>
+    <dimen name="contacts_header_textsize">16.0dip</dimen>
+    <dimen name="search_notfound_textsize">24.0dip</dimen>
+    <dimen name="search_endoflist_textsize">21.0dip</dimen>
+</resources>
